@@ -1,0 +1,12 @@
+name: Greet Contributors
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Thank you for your contribution! We appreciate it."
